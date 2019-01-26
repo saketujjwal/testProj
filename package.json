@@ -1,0 +1,43 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "babel-node buildTools/devServer.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saketujjwal/testProj.git"
+  },
+  "author": "Ujjwal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/saketujjwal/testProj/issues"
+  },
+  "homepage": "https://github.com/saketujjwal/testProj#readme",
+  "dependencies": {
+    "@material-ui/core": "3.9.0",
+    "babel-cli": "6.26.0",
+    "babel-core": "6.26.3",
+    "babel-loader": "7.1.5",
+    "babel-preset-env": "1.7.0",
+    "babel-preset-es2015": "6.24.1",
+    "babel-preset-react": "6.24.1",
+    "babel-preset-react-hmre": "1.1.1",
+    "css-loader": "2.1.0",
+    "express": "4.16.4",
+    "history": "^4.7.2",
+    "html-webpack-plugin": "3.2.0",
+    "nodemon": "1.18.9",
+    "open": "0.0.5",
+    "react": "16.7.0",
+    "react-dom": "16.7.0",
+    "react-router": "4.3.1",
+    "react-router-dom": "^4.3.1",
+    "style-loader": "0.23.1",
+    "webpack": "4.28.4",
+    "webpack-dev-middleware": "3.5.1",
+    "webpack-hot-middleware": "2.24.3"
+  }
+}

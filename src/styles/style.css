@@ -1,0 +1,41 @@
+.main {
+    background-color: honeydew;
+
+}
+
+.header {
+    background-color: blue;
+    color:white;
+    height:10%;
+    font-size: 50px;
+    text-align: -webkit-center;
+    margin-left: 6%
+}
+
+.marginTop-10 {
+    margin-top:'10%'
+}
+
+.menuStyle {
+    margin-bottom: 30%;
+    font-size: x-large;
+}
+
+.layout {
+    margin-left: 6%;
+    height: 80%;
+    text-align: center;
+    padding:10px;
+}
+
+.footer {
+    margin-left: 6%;
+    text-align: -webkit-center;
+    color: cornflowerblue;
+    padding:1%
+}
+
+.navStyle {
+    background-color: aqua;
+    height: 100%;
+}
