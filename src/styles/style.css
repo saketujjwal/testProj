@@ -26,6 +26,7 @@
     height: 80%;
     text-align: center;
     padding:10px;
+    overflow:auto;
 }
 
 .footer {
@@ -38,4 +39,12 @@
 .navStyle {
     background-color: aqua;
     height: 100%;
+}
+
+.container {
+    text-align:left
+}
+
+ul {
+    list-style-type: none
 }

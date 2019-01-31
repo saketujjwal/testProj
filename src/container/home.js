@@ -5,6 +5,7 @@ import {connect} from 'react-redux';
 import Paper from '@material-ui/core/Paper'
 
 import * as actions from '../actions/homeActions'
+import HolidayList from '../component/holidayList'
 
 class Home extends Component {
     componentDidMount(){
@@ -12,15 +13,17 @@ class Home extends Component {
     }
     render() {
         const {
-            isLoadedBool
+            isLoadedBool,
+            holidayList
         } = this.props;
         return(
             <Paper className='layout'> 
                 HOME PAGE
                 <div>
-                    <a target='_blank' href='https://holidayapi.com/v1/holidays?key=de5b998b-8778-4439-ab33-42d0bcbb214b&country=US&year=2015'>
+                    {/* <a target='_blank' href='https://holidayapi.com/v1/holidays?key=de5b998b-8778-4439-ab33-42d0bcbb214b&country=US&year=2015'>
                         API Response
-                    </a>
+                    </a> */}
+                    <HolidayList holidayList = {holidayList}/>
                 </div>
 
 
@@ -31,7 +34,8 @@ class Home extends Component {
 
 function mapStateToProps(state) {
     return {
-        isLoadedBool:state.isLoaded
+        isLoadedBool:state.isLoaded,
+        holidayList:state.home.data
     }
 }
 
