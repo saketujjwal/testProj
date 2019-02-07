@@ -4,17 +4,20 @@ import {connect} from 'react-redux';
 
 import Paper from '@material-ui/core/Paper'
 
-import * as actions from '../actions/homeActions'
+import * as action from '../actions'
 import HolidayList from '../component/holidayList'
 
+const actions=action.default;
 class Home extends Component {
     componentDidMount(){
-        this.props.loadInitialData(true)
+        this.props.loadInit(true)
     }
     render() {
         const {
             isLoadedBool,
-            holidayList
+            holidayList,
+            loadHolidayDetails,
+            history
         } = this.props;
         return(
             <Paper className='layout'> 
@@ -23,14 +26,18 @@ class Home extends Component {
                     {/* <a target='_blank' href='https://holidayapi.com/v1/holidays?key=de5b998b-8778-4439-ab33-42d0bcbb214b&country=US&year=2015'>
                         API Response
                     </a> */}
-                    <HolidayList holidayList = {holidayList}/>
+                    <HolidayList 
+                        holidayList = {holidayList}
+                        loadHolidayDetails={loadHolidayDetails}
+                        history={history}
+                    />
                 </div>
 
 
             </Paper>
         )
     }
-}   `1q`
+}
 
 function mapStateToProps(state) {
     return {
@@ -41,7 +48,8 @@ function mapStateToProps(state) {
 
 function mapDispatchToProps(dispatch){
     return {
-        loadInitialData: data => dispatch(actions.loadInit(data))
+        loadInit: data => dispatch(actions.loadInit(data)),
+        loadHolidayDetails: (e,data) => dispatch(actions.loadHolidayDetails(e,data))
     }
 }
 export default connect(

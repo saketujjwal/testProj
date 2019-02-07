@@ -6,10 +6,11 @@ import  About from './about'
 
 class Main extends Component {
     render() {
+        const props=this.props;
         return(
                 <Switch>
-                    <Route exact path='/' component={Home}/>
-                    <Route path='/about' component={About} />
+                    <Route exact path='/' render={props => <Home {...props}/>}/>
+                    <Route path='/about' render={props =><About {...props}/>} />
                 </Switch>
         )
     }

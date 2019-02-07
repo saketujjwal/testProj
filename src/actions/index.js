@@ -1,5 +1,4 @@
-import * as home from './homeActions'
+import * as home from './homeActions';
+import * as about from './aboutActions';
 
-export default {
-    ...home
-}
+export default { ...home, ...about };

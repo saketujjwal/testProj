@@ -1,4 +1,4 @@
-import * as constants  from '../constants'
+import * as constants  from '../../constants'
 
 export function loadInit(data) {
     return {
@@ -6,3 +6,4 @@ export function loadInit(data) {
         payload: data
     }
 }
+

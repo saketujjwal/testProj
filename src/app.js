@@ -20,7 +20,7 @@ class App extends Component {
                     <div className='main'> 
                         <Header headerText={'This is Header Component'}/>
                         <LeftNavigation />
-                        <Main />
+                        <Main {...this.props}/>
                         <Footer />
                     </div>
                 </Router>

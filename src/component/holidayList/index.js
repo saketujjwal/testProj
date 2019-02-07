@@ -2,7 +2,9 @@ import React from 'react'
 
 const HolidayList = (props) => {
     const {
-        holidayList
+        holidayList,
+        loadHolidayDetails,
+        history
     } = props
 
     return(
@@ -11,7 +13,7 @@ const HolidayList = (props) => {
             {
                 holidayList && holidayList.holidays && Object.keys(holidayList.holidays).map(item => {
                     return <li key={item}>
-                        <a href=''>
+                        <a href="javascript:void(0);" onClick={e => loadHolidayDetails(history,e)}>
                             {item}
                         </a>
                     </li>
