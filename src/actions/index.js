@@ -1,5 +1,7 @@
-import * as home from './homeActions'
+import * as contact from './contact';
+import * as addNewCOntact from './addNewContact'
 
 export default {
-    ...home
+    ...contact,
+    ...addNewCOntact
 }

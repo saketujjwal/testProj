@@ -18,10 +18,10 @@ class LeftNavigation extends Component {
                         Menu
                     </ListItem>
                     <ListItem>
-                        <Link to='/'>Home</Link>
+                        <Link to='/'>Contacts</Link>
                     </ListItem>
                     <ListItem>
-                        <Link to='/about'>About</Link>
+                        <Link to='/contactEdit'>EditContact</Link>
                     </ListItem>
                 </List>
                 </Drawer>

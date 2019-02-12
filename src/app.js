@@ -18,9 +18,9 @@ class App extends Component {
             <Provider store={store}>
                 <Router history={history}>
                     <div className='main'> 
-                        <Header headerText={'This is Header Component'}/>
+                        <Header headerText={'Contact Details'}/>
                         <LeftNavigation />
-                        <Main />
+                        <Main {...this.props}/>
                         <Footer />
                     </div>
                 </Router>
