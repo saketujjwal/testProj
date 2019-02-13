@@ -4,7 +4,7 @@ import {connect} from 'react-redux';
 import Paper from '@material-ui/core/Paper'
 
 import * as action from '../actions'
-import AddNewContactComponent from '../component/addNewUser'
+import AddNewContactComponent from '../component/contactDetails'
 
 const actions = action.default;
 class AddNewContact extends Component {
@@ -21,6 +21,7 @@ class AddNewContact extends Component {
         return(
             <Paper className='layout'>
                 <AddNewContactComponent 
+                actionButtonText = {'Add'}
                 handleFirstNameChange = {handleFirstNameChange}
                 handleLastNameChange = {handleLastNameChange}
                 handleAgeChange = {handleAgeChange}
@@ -48,7 +49,7 @@ function mapDispatchToProps(dispatch){
         handleLastNameChange: data => dispatch(actions.handleLastNameChange(data)),
         handleAgeChange: data => dispatch(actions.handleAgeChange(data)),
         handlePhoneChange: data => dispatch(actions.handlePhoneChange(data)),
-        addContact: (e,history) => dispatch(actions.addContact(e, history))
+        addContact: (e,history) => dispatch(actions.addEditContact(e, history))
     }
 }
 export default connect(

@@ -1,11 +1,13 @@
 import {fork , all } from 'redux-saga/effects'
 
 import contactSaga from './contact.js';
-import addNewContact from './addNewContact'
+import addEditContact from './addEditContact';
+import deleteContact from './deleteContact'
 
 export default function* rootSaga(){
     yield all([
         fork(contactSaga),
-        fork(addNewContact)
+        fork(addEditContact),
+        fork(deleteContact)
     ])
 }

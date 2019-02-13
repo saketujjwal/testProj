@@ -28,9 +28,9 @@ export function handlePhoneChange(event) {
     }
 }
 
-export function addContact(history){
+export function addEditContact(history){
     return {
-        type: constants.ADD_NEW_USER,
+        type: constants.ADD_EDIT_NEW_USER,
         history
     }
 }

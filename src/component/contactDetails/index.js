@@ -7,6 +7,13 @@ import Button from '@material-ui/core/Button';
 
 const AddNewUser = (props) => {
     const {
+        actionButtonText,
+
+        firstName,
+        lastName,
+        age,
+        phone,
+
         handleFirstNameChange,
         handleLastNameChange,
         handleAgeChange,
@@ -23,6 +30,7 @@ const AddNewUser = (props) => {
                 placeholder='firstName'
                 onChange={handleFirstNameChange}
                 margin="normal"
+                value={firstName}
                 />
 
                 <TextField
@@ -31,6 +39,7 @@ const AddNewUser = (props) => {
                 placeholder='lastName'
                 onChange={handleLastNameChange}
                 margin="normal"
+                value={lastName}
                 />
             </div>
 
@@ -41,6 +50,7 @@ const AddNewUser = (props) => {
                     placeholder='age'
                     onChange={handleAgeChange}
                     margin="normal"
+                    value={age}
                     />
 
                 <TextField
@@ -49,6 +59,7 @@ const AddNewUser = (props) => {
                     placeholder='phone'
                     onChange={handlePhoneChange}
                     margin="normal"
+                    value={phone}
                     />
             </div>
             <div style = {{marginTop: '20%' , justifyContent:'flex-end'}}>
@@ -60,7 +71,7 @@ const AddNewUser = (props) => {
                 color="primary"
                 onClick={(e) => addContact(history,e)}
                 >
-                Add
+                {actionButtonText}
             </Button>
             </div>
         </form>

@@ -1,10 +1,10 @@
 import {combineReducers} from 'redux';
 import contact from './contact';
-import addNewContact from './addNewContact'
+import contactDetails from './contactDetails'
 
 const rootReducer = combineReducers({
     contact,
-    addNewContact
+    contactDetails
 });
 
 export default rootReducer;
