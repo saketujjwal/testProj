@@ -4,6 +4,7 @@ import mongoose from 'mongoose';
 
 import holidayListRouter from './api/endPoints/holidayList'
 import contactRouter from './api/endPoints/contactDetails'
+import loginRouter from './api/endPoints/login'
 
 mongoose.connect(
     'mongodb://admin:Bhupesh5429@cluster0-shard-00-00-1nvgj.mongodb.net:27017,cluster0-shard-00-01-1nvgj.mongodb.net:27017,cluster0-shard-00-02-1nvgj.mongodb.net:27017/first-test?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin&retryWrites=true',
@@ -33,6 +34,7 @@ app.use((req,res,next)=> {
 //List of API's endPoints
 app.use('/holidayList',holidayListRouter);
 app.use('/contact',contactRouter)
+app.use('/login',loginRouter)
 
 //Error Handling
 app.use((req, res, next) => {

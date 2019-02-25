@@ -85,9 +85,23 @@ div {
 }
 
 .margin-right-2 {
-     margin-right: 2%; 
+     margin-right: 2% !important; 
 }
 
 .no-underline {
     text-decoration: none
+}
+
+.signIn {
+    height: 60%;
+    width: 40%;
+    margin: auto;
+    padding: inherit;
+}
+
+.logout {
+    position: absolute !important;
+    right: 2px;
+    color: aliceblue !important;
+    margin-top:1% !important
 }

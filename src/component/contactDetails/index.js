@@ -64,7 +64,7 @@ const AddNewUser = (props) => {
             </div>
             <div style = {{marginTop: '20%' , justifyContent:'flex-end'}}>
 
-            <Link to='/' className = 'margin-right-2 secondryButton'> Cancel</Link>
+            <Link to='/contactList' className = 'margin-right-2 secondryButton'> Cancel</Link>
 
             <Button 
                 variant="contained" 

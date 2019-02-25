@@ -29,7 +29,7 @@ function* addContact(params){
 
         
     if(payload) {
-        params.history.push('/')
+        params.history.push('/contactList')
     }
 
 }
@@ -46,7 +46,7 @@ function* editContact(id, params) {
         "firstName":firstName,
         "lastName": lastName,
         "age":age,
-            "phone":phone
+        "phone":phone
     }
     const url = 'http://localhost:9443/contact/details/'+encodeURIComponent(id);
     const obj = {
@@ -61,7 +61,7 @@ function* editContact(id, params) {
 
         
     if(payload) {
-        params.history.push('/')
+        params.history.push('/contactList')
     }
 
 }

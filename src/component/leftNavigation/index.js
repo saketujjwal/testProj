@@ -18,7 +18,7 @@ class LeftNavigation extends Component {
                         Menu
                     </ListItem>
                     <ListItem>
-                        <Link to='/'>Contacts</Link>
+                        <Link to='/contactList'>Contacts</Link>
                     </ListItem>
                     <ListItem>
                         <Link to='/contactEdit'>EditContact</Link>
